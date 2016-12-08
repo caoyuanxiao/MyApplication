@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">fristApplication</string>
+
+	<string name="Username">输入你的用户名</string>
+	<string name="Password">输入你的密码</string>
+	<string name="Userlogin">用户登陆</string>
+	<string name="UserClear">用户注销</string>
+</resources>

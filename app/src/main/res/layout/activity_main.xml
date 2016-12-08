@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:fitsSystemWindows="true"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<RelativeLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorAccent">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/app_name"
+			android:textColor="#ffffff"
+			android:textSize="22dp"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true">
+
+
+		<ProgressBar
+			android:id="@+id/progressbar_loading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:visibility="gone"/>
+
+		<EditText
+			android:id="@+id/edt_username"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="@string/Username"/>
+
+
+		<EditText
+			android:id="@+id/edt_password"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edt_username"
+			android:hint="@string/Password"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/edt_password"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/btn_login"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Userlogin"/>
+
+			<Button
+				android:id="@+id/btn_clear"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/UserClear"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>
